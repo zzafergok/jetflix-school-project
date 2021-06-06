@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jetflix_school_project/components/genre_card.dart';
 import 'package:jetflix_school_project/models/movie.dart';
-
 import '../../../constants.dart';
 
 class Genres extends StatelessWidget {

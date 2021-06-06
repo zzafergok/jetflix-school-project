@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jetflix_school_project/constants.dart';
 import 'package:jetflix_school_project/models/movie.dart';
-
 import 'backdrop_rating.dart';
 import 'cast_and_crew.dart';
 import 'genres.dart';
@@ -13,7 +12,6 @@ class Body extends StatelessWidget {
   const Body({Key key, this.movie}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    // it will provide us total height and width
     Size size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Column(

@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'dart:math' as math;
-
 import 'package:jetflix_school_project/models/movie.dart';
-
 import '../../../constants.dart';
 import 'movie_card.dart';
 
@@ -20,9 +17,7 @@ class _MovieCarouselState extends State<MovieCarousel> {
   void initState() {
     super.initState();
     _pageController = PageController(
-      // so that we can have small portion shown on left and right side
       viewportFraction: 0.8,
-      // by default our movie poster
       initialPage: initialPage,
     );
   }
@@ -60,8 +55,6 @@ class _MovieCarouselState extends State<MovieCarousel> {
           double value = 0;
           if (_pageController.position.haveDimensions) {
             value = index - _pageController.page;
-            // We use 0.038 because 180*0.038 = 7 almost and we need to rotate our poster 7 degree
-            // we use clamp so that our value vary from -1 to 1
             value = (value * 0.038).clamp(-1, 1);
           }
           return AnimatedOpacity(

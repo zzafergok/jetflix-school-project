@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:jetflix_school_project/models/movie.dart';
-
 import '../../../constants.dart';
 
 class BackdropAndRating extends StatelessWidget {
@@ -17,7 +16,6 @@ class BackdropAndRating extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // 40% of our total height
       height: size.height * 0.4,
       child: Stack(
         children: <Widget>[

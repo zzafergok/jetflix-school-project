@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-
 import '../../../constants.dart';
 import 'cast_card.dart';
 
 class CastAndCrew extends StatelessWidget {
   final List casts;
-
   const CastAndCrew({Key key, this.casts}) : super(key: key);
 
   @override

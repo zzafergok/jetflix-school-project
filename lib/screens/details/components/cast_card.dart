@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../constants.dart';
 
 class CastCard extends StatelessWidget {
@@ -26,7 +25,6 @@ class CastCard extends StatelessWidget {
               ),
             ),
           ),
-          // SizedBox(height: kDefaultPadding / 2),
           Text(
             cast['orginalName'],
             textAlign: TextAlign.center,
